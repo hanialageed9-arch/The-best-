@@ -1,0 +1,123 @@
+/* Reset */
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+/* إعدادات عامة */
+body{
+font-family:Tahoma, Arial, sans-serif;
+background:#f2f6f8;
+direction:rtl;
+}
+
+/* الشريط العلوي */
+.navbar{
+display:flex;
+align-items:center;
+justify-content:space-between;
+background:#ffffff;
+padding:12px 25px;
+box-shadow:0 2px 6px rgba(0,0,0,0.1);
+}
+
+/* شعار */
+.logo{
+width:60px;
+}
+
+/* القائمة */
+.navbar ul{
+list-style:none;
+display:flex;
+gap:18px;
+margin:0;
+padding:0;
+}
+
+.navbar a{
+text-decoration:none;
+color:#333;
+font-weight:bold;
+transition:0.3s;
+}
+
+.navbar a:hover{
+color:#e63946;
+}
+
+/* الواجهة الرئيسية */
+.hero{
+background:linear-gradient(135deg,#e63946,#ff6b6b);
+color:white;
+padding:80px 20px;
+text-align:center;
+border-radius:0 0 30px 30px;
+}
+
+.hero h1{
+font-size:32px;
+margin-bottom:10px;
+}
+
+.hero p{
+font-size:18px;
+opacity:0.9;
+}
+
+/* الأقسام */
+section{
+background:#ffffff;
+max-width:900px;
+margin:30px auto;
+padding:30px;
+border-radius:18px;
+box-shadow:0 10px 30px rgba(0,0,0,0.08);
+text-align:center;
+}
+
+/* معرض الصور */
+.gallery{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+margin-top:20px;
+}
+
+.gallery img{
+width:220px;
+margin:12px;
+border-radius:15px;
+box-shadow:0 6px 15px rgba(0,0,0,0.15);
+transition:0.3s;
+}
+
+.gallery img:hover{
+transform:scale(1.05);
+}
+
+/* الفوتر */
+footer{
+background:#333;
+color:white;
+text-align:center;
+padding:15px;
+margin-top:40px;
+}
+
+/* تجاوب مع الجوال */
+@media(max-width:768px){
+.navbar{
+flex-direction:column;
+gap:10px;
+}
+
+.hero h1{
+font-size:24px;
+}
+
+.gallery img{
+width:90%;
+}
+}
